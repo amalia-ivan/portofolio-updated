@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device- width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    
+  </head>
+  <body>
+    <div class="form">
+      <main>
+        <div class="intro">
+          <h1 id="title">Web Development Research</h1>
+          <p id="description">~Thank you for helping us improve nothing~</p>
+        </div>
+        <form id= "survey-form">
+
+          <fieldset>
+            
+            <label for="name" id="name-label">Full Name: <input id="name" type="text" placeholder="John Doe" required /></label>
+            <label for="email" id="email-label">Email adress: <input id="email" type="email" placeholder="johndoe69@gmail.com" required />
+            <label for="number" id="number-label">Age: <input id="number" type="number" min="17" max="80" placeholder="22" required/>
+          </fieldset>
+
+          <fieldset>
+            <legend for="dropdown">What option best describes your current role?</legend>
+          <select name="dropdown" id="dropdown">
+            <option value="">select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Employee</option>
+            <option value="jobless">In-between jobs</option>
+            <option value="other">Other</option>
+          </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Have you ever though about pursuing a Web Development career?</legend>
+            <label for="yes"><input type="radio" name="recom" id="yes" value="pos" class="inline"/> Yes </label>
+            <label for="no"><input type="radio" name="recom" id="no" value="neg" class="inline"/> No  </label>
+            <label for="idk"><input type="radio" name="recom" id="idk" value="whoknows" class="inline"/> I'd rather not say  </label>    
+          </fieldset>
+
+          <fieldset>
+            <legend for="dropdown">What are your strongest assets in Web Dev?</legend>
+            <select name="dropdown" id="dropdown">
+              <option value="">select</option>
+              <option value="1">HTML</option>
+              <option value="2">CSS</option>
+              <option value="3">JavaScript</option>
+              <option value="done">Just Browsing</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>What attracts you to a Web Development career the most?</legend>
+            <label for="flex"><input type="checkbox" id="flex" name="change" value="flex"  class="inline"/> Schedule Flexibility</label>
+            <label for="org"><input type="checkbox" id="org" name="change" value="org"  class="inline"/> Organization</label>
+            <label for="prof"><input type="checkbox" id="prof" name="change" value="prof"  class="inline"/> Creative environment</label>
+            <label for="event"><input type="checkbox" id="event" name="change" value="event" class="inline"/> Events</label>
+            <label for="act"><input type="checkbox" id="act" name="change" value="act"  class="inline"/> Work from Home policy</label>
+            <label for="social"><input type="checkbox" id="socia" name="change" value="socia" class="inline"/> Just the coding part</label>
+            <label for="other"><input type="checkbox" id="other" name="change" value="other"  class="inline"/> Other</label>
+            <label for="more">Aditional comments: </label>
+            <textarea id="more" placeholder="I like that..."></textarea>
+          </fieldset>
+ 
+
+          <input type="submit"id="submit" value="Submit"/>
+          <p>born and raised by Amalia Ivan</p>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
